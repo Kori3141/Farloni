@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8ia4n1uoka2c"]
+
+[ext_resource type="Script" path="res://serfa.gd" id="1_uv51l"]
+[ext_resource type="Texture2D" uid="uid://fl2mrnnyqomq" path="res://sprites/Serfa_Placeholder.png" id="2_aaqai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ywvob"]
+size = Vector2(16, 16)
+
+[node name="Serfa" type="Area2D"]
+script = ExtResource("1_uv51l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ywvob")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_aaqai")

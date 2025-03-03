@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://u6m130jt7vxy"]
+
+[ext_resource type="Script" path="res://the_goddamn_trio/character_global.gd" id="1_6t76c"]
+[ext_resource type="Texture2D" uid="uid://buh30m1wrns8u" path="res://sprites/Fresa_Placeholder.png" id="2_s10aq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8inyh"]
+
+[node name="fresa" type="Area2D"]
+script = ExtResource("1_6t76c")
+move = 3
+char_name = "Fresa"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8inyh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_s10aq")

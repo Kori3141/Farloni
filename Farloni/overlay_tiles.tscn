@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://7ew0wlgp2glb"]
+
+[ext_resource type="Texture2D" uid="uid://b6bls000xf2ci" path="res://sprites/Highlights.png" id="1_7agub"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r1u25"]
+texture = ExtResource("1_7agub")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5hsq4"]
+sources/0 = SubResource("TileSetAtlasSource_r1u25")
+
+[node name="OverlayTiles" type="TileMapLayer"]
+modulate = Color(1, 1, 1, 0.290196)
+visibility_layer = 512
+tile_set = SubResource("TileSet_5hsq4")
